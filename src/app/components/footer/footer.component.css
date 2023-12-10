@@ -1,0 +1,11 @@
+footer{
+    position: relative;
+    height: 30vh;
+}
+footer h6{
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,15 @@
+section{
+    min-height: 100vh;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem 0;
+    padding: auto;
+    display: grid;
+    place-content: center;
+    transition: all 250ms ease-in;
+    opacity: 0;
+}
+.visible{
+    opacity: 1;
+    background-color: red;
+}

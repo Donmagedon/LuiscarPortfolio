@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luiscar's Portfolio</title>
+</head>
+<body>
+  <app-nav class="notVisible" [ngStyle]="{
+    'transition':'all 450ms ease-in',
+  }" visibleComp (caughtEvent)='canBeSeen($event)'></app-nav>
+  <app-header class="notVisible" [ngStyle]="{
+    'transition':'all 450ms ease-in',
+  }" visibleComp (caughtEvent)='canBeSeen($event)'></app-header>
+<ol [ngStyle]="{
+  'display':'flex',
+  'flex-direction':'column',
+  'align-items':'center',
+  'padding':0
+}">
+  <app-about class="notVisible" [ngStyle]="{
+    'transition':'all 450ms ease-in',
+
+  }" visibleComp (caughtEvent)='canBeSeen($event)'></app-about>
+  <app-my-projects class="notVisible" [ngStyle]="{
+    'transition':'all 450ms ease-in',
+  }" visibleComp (caughtEvent)="canBeSeen($event)">
+  <app-show-project class="notVisible" [ngStyle]="{
+    'transition':'all 450ms ease-in',
+  }" visibleComp (caughtEvent)="canBeSeen($event)"></app-show-project>
+  </app-my-projects >
+  <app-contact-me class="notVisible" [ngStyle]="{
+    'transition':'all 450ms ease-in',
+  }" visibleComp (caughtEvent)="canBeSeen($event)"></app-contact-me>
+</ol>
+<app-footer></app-footer>
+</body>
+</html>

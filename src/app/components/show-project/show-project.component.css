@@ -1,0 +1,19 @@
+.project_container{
+    display: flex;
+    width: 90vw;
+    min-height: 90vh;
+
+}
+
+.project_pic{
+    flex: 9 9;
+}
+.project_info{
+    flex: 1 1;
+}
+
+@media (max-width:600px){
+    .project_container{
+        flex-direction: column;
+    }
+}

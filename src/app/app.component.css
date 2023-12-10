@@ -1,0 +1,20 @@
+
+@keyframes test {
+    0%{
+        transform: translateY(-3rem);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.visible{
+    opacity: 1;
+    animation:  test 400ms ease-in;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.notVisible{
+    opacity: 0;
+}

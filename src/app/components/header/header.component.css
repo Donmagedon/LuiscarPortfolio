@@ -1,0 +1,87 @@
+html,header,.layout{
+    min-height: 100vh;
+}
+#logo{
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--main-Clr);
+    border-radius: 3rem;
+    display: inline-block;
+}
+
+#logo::before{
+    content: "L";
+    position: absolute;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: inline-block;
+}
+header{
+    display: grid;
+    place-content: center;
+    margin-bottom: 3rem;
+}
+
+header main{
+    padding: min(2rem,4rem);
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
+
+
+header main #intro_1{
+    font-size: 1rem; 
+    color: var(--accent);
+
+    
+}
+
+
+header main #intro_2{
+    font-size: clamp(1.5rem,3rem,1rem);
+    font-weight: bold;
+    opacity: .9;
+
+
+
+}
+header main #intro_3{
+    font-size: 1rem;
+
+
+
+}
+header main h1{
+    font-size: clamp(1.3rem,2.5rem,3rem);
+    margin: 0;
+
+}
+header button{
+    border: none;
+    padding: 1rem 2rem;
+    align-self: flex-start;
+    margin-top: 2rem;
+    border: var(--accent) 1px solid;
+    border-radius: .15rem;
+    color: var(--accent);
+    font-weight: 600;
+    transition: 200ms all ease-in;
+    cursor: pointer;
+
+}
+header button:hover, header button:focus{
+    background-color: var(--accent_faded);
+}
+
+@media (max-width:600px) {
+    header main p, h1{
+        text-align: center;
+    }
+    
+}
