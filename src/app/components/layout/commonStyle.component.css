@@ -141,9 +141,12 @@ html,header,.layout{
     font-size: .8rem;
     
 }
-
+#my_projects{
+    padding: 4rem 0;
+}
 #my_projects_title{
     position: absolute;
+
     margin: 1.5% 0 0 2rem;
 }
 

@@ -2,16 +2,35 @@
     display: flex;
     width: 90vw;
     min-height: 90vh;
+    margin-top: 2rem;
+    flex-direction: column;
 
 }
-
-.project_pic{
+a{
+    width: 100%;
+}
+a .project_pic{
     flex: 9 9;
+    width: 100%;
+    height: 30rem;
+    background-image: url("../../../assets/media/BlankShoreDisplay.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .project_info{
+    
     flex: 1 1;
 }
-
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+    align-items: flex-start;
+}
+ul li {
+    margin: 2rem;
+}
 @media (max-width:600px){
     .project_container{
         flex-direction: column;
