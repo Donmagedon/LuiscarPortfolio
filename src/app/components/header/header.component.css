@@ -85,3 +85,7 @@ header button:hover, header button:focus{
     }
     
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}

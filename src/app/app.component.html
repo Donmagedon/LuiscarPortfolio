@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luiscar's Portfolio</title>
 </head>
 <body>
   <app-nav class="notVisible" [ngStyle]="{
@@ -25,9 +24,6 @@
   <app-my-projects class="notVisible" [ngStyle]="{
     'transition':'all 450ms ease-in',
   }" visibleComp (caughtEvent)="canBeSeen($event)">
-  <app-show-project class="notVisible" [ngStyle]="{
-    'transition':'all 450ms ease-in',
-  }" visibleComp (caughtEvent)="canBeSeen($event)"></app-show-project>
   </app-my-projects >
   <app-contact-me class="notVisible" [ngStyle]="{
     'transition':'all 450ms ease-in',

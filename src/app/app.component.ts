@@ -17,7 +17,6 @@ export class AppComponent implements OnInit,AfterViewInit{
   ngAfterViewInit(): void {
   }
  canBeSeen(seen: any){
-  console.log(seen)
   if(seen.isIntersecting){
     seen.target.classList.remove("notVisible")
   }

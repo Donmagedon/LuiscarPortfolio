@@ -14,7 +14,7 @@ export class VisibleComp implements OnInit, OnDestroy {
         this.observer = new IntersectionObserver(entries=>{
             entries.forEach(entry=>{
                 this.caughtEvent.emit(entry)
-            })},{threshold:.4})
+            })},{threshold:.1})
         this.observer.observe(this.element.nativeElement)
     }
     ngOnDestroy(): void {

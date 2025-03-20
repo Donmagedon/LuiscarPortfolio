@@ -1,32 +1,23 @@
 <section class="project_container">
-    <a href="https://blank-shore.web.app/" target="_blank">
+    <h2>{{project.title}}</h2>
+    <a href="{{project.url}}" target="_blank">
     <div [ngStyle]=
     "
     {
         'display':'grid',
-        'place-items':'center'
+        'place-items':'center',
+        'background-image':'url('+project.image+')'
     }
     " class="project_pic">
     </div>
  </a>
         <div class="project info">
-        <p>Ecommerce FullStack application that allows users to login to account to purchase items that better fit their lifeslyle and budget,
-            the quality at Blank Shore is unmatched, you can show who you are , embrace your sense of fasion. <br>Login with dummy account: <b><br>Username: Visitor <br>Password: curious101</b>
+        <p [innerHTML]="project.projectInfo">
+            
         </p>
         <h3>Technologies Used:</h3>
-        <ul>
-            <li>HTML&CSS3</li>
-            <li>Angular</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>ExpressJS</li>
-            <li>NodeJS</li>
-            <li>Created REST API for backend operations</li>z
-            <li>JWT for authentication</li>
-            <li>Rxjs for asynchronous programming</li>
-            <li>Linux VM for API testing</li>
-            <li>Render for hosting API</li>
-            <li>Firebase to host site</li>
+        <ul >
+            <li *ngFor="let item of project.technologies; let i = index">{{item}}</li>
         </ul>
     </div>
 </section>

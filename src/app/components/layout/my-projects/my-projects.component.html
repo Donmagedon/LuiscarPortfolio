@@ -1,6 +1,8 @@
 <section id="my_projects" class="layout">
     <li id="my_projects_title">My Projects</li>
     <div class="projects_container">
-      <app-show-project></app-show-project>
+    
+      <app-show-project *ngFor="let item of projects;let i = index" [project]="item" ></app-show-project>
+      
     </div>
   </section>

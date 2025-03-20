@@ -86,7 +86,7 @@ html,header,.layout{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
 
 }
 #contact_me_title{
@@ -156,3 +156,8 @@ html,header,.layout{
     }
 }
 
+.projects_container{
+    display: flex;
+    flex-direction: column;
+
+}
