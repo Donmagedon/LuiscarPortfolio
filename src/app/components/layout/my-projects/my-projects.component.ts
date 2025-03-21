@@ -27,7 +27,7 @@ export class MyProjectsComponent {
       "Render for hosting API",
       "Firebase to host site"
     ],
-    image:"../../../assets/media/BlankShoreDisplay.png"
+    image:"./assets/media/BlankShoreDisplay.png"
     },
     {
       title:"Read my Coffee",
@@ -43,7 +43,7 @@ export class MyProjectsComponent {
       "Render for hosting API",
       "Github Pages for Hosting"
     ],
-    image:"../../../assets/media/ReadMyCoffee.png"
+    image:"./assets/media/ReadMyCoffee.png"
     }];
 
 
